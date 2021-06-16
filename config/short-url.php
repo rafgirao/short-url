@@ -12,7 +12,7 @@ return [
     | This allows you to define your own route that points to
     | the controller at:
     |
-    | AshAllenDesign\ShortURL\Controllers\ShortURLController
+    | RafaelGirao\ShortURL\Controllers\ShortURLController
     |
     */
     'disable_default_route' => false,
@@ -60,7 +60,7 @@ return [
     | generated keys are unique.
     |
     */
-    'key_salt'              => 'AshAllenDesign\ShortURL',
+    'key_salt'              => 'RafaelGirao\ShortURL',
 
     /*
     |--------------------------------------------------------------------------

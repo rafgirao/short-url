@@ -1,11 +1,11 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Classes;
+namespace RafaelGirao\ShortURL\Classes;
 
-use AshAllenDesign\ShortURL\Events\ShortURLVisited;
-use AshAllenDesign\ShortURL\Exceptions\ValidationException;
-use AshAllenDesign\ShortURL\Models\ShortURL;
-use AshAllenDesign\ShortURL\Models\ShortURLVisit;
+use RafaelGirao\ShortURL\Events\ShortURLVisited;
+use RafaelGirao\ShortURL\Exceptions\ValidationException;
+use RafaelGirao\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Models\ShortURLVisit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
 use Jenssegers\Agent\Agent;

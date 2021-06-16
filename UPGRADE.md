@@ -53,7 +53,7 @@ If you would prefer to publish the migrations so that you can make changes to th
 command before migrating:
 
 ```
-php artisan vendor:publish --provider="AshAllenDesign\ShortURL\Providers\ShortURLProvider"
+php artisan vendor:publish --provider="RafaelGirao\ShortURL\Providers\ShortURLProvider"
 ```
 
 Note: When this migrations runs, it will auto-populate any of your existing short URLs to have today's date as the
@@ -83,7 +83,7 @@ If you would prefer to publish the migrations so that you can make changes to th
 command before migrating:
 
 ```
-php artisan vendor:publish --provider="AshAllenDesign\ShortURL\Providers\ShortURLProvider"
+php artisan vendor:publish --provider="RafaelGirao\ShortURL\Providers\ShortURLProvider"
 ```
 
 Note: When this migration runs, it will auto-populate any of your existing short URLs to have the tracking values as specified in your

@@ -1,6 +1,6 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Models;
+namespace RafaelGirao\ShortURL\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -46,6 +46,7 @@ class ShortURLVisit extends Model
      */
     protected $fillable = [
         'short_url_id',
+        'account',
         'ip_address',
         'operating_system',
         'operating_system_version',
@@ -55,6 +56,13 @@ class ShortURLVisit extends Model
         'referer_url',
         'device_type',
     ];
+
+    public static function booted()
+    {
+        self::creating(function ($model){
+            $model->account = session()->get('account')->id;
+        });
+    }
 
     /**
      * The attributes that should be mutated to dates.

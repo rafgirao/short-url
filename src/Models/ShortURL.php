@@ -1,6 +1,6 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Models;
+namespace RafaelGirao\ShortURL\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
@@ -45,6 +45,8 @@ class ShortURL extends Model
      */
     protected $fillable = [
         'destination_url',
+        'account',
+        'project',
         'default_short_url',
         'url_key',
         'single_use',
@@ -89,6 +91,13 @@ class ShortURL extends Model
         'track_referer_url'              => 'boolean',
         'track_device_type'              => 'boolean',
     ];
+
+    public static function booted()
+    {
+        self::creating(function ($model){
+            $model->account = session()->get('account')->id;
+        });
+    }
 
     /**
      * A short URL can be visited many times.

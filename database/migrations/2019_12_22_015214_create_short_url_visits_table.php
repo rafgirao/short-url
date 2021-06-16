@@ -15,6 +15,8 @@ class CreateShortUrlVisitsTable extends Migration
     {
         Schema::create('short_url_visits', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('account');
+            $table->foreign('account')->references('id')->on('accounts')->onDelete('CASCADE');
             $table->unsignedBigInteger('short_url_id');
             $table->string('ip_address')->nullable();
             $table->string('operating_system')->nullable();

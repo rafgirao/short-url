@@ -1,10 +1,10 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Tests\Unit\Classes;
+namespace RafaelGirao\ShortURL\Tests\Unit\Classes;
 
-use AshAllenDesign\ShortURL\Classes\Validation;
-use AshAllenDesign\ShortURL\Exceptions\ValidationException;
-use AshAllenDesign\ShortURL\Tests\Unit\TestCase;
+use RafaelGirao\ShortURL\Classes\Validation;
+use RafaelGirao\ShortURL\Exceptions\ValidationException;
+use RafaelGirao\ShortURL\Tests\Unit\TestCase;
 use Illuminate\Support\Facades\Config;
 
 class ValidationTest extends TestCase

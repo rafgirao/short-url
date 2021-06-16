@@ -1,9 +1,9 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Events;
+namespace RafaelGirao\ShortURL\Events;
 
-use AshAllenDesign\ShortURL\Models\ShortURL;
-use AshAllenDesign\ShortURL\Models\ShortURLVisit;
+use RafaelGirao\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Models\ShortURLVisit;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

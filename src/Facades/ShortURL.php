@@ -1,8 +1,8 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Facades;
+namespace RafaelGirao\ShortURL\Facades;
 
-use AshAllenDesign\ShortURL\Classes\Builder;
+use RafaelGirao\ShortURL\Classes\Builder;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Facade;
 use RuntimeException;
@@ -24,7 +24,7 @@ use RuntimeException;
  * @method static self resetOptions()
  * @method static self activateAt(Carbon $activationTime)
  * @method static self deactivateAt(Carbon $deactivationTime)
- * @method static \AshAllenDesign\ShortURL\Models\ShortURL make()
+ * @method static \RafaelGirao\ShortURL\Models\ShortURL make()
  *
  * @see Builder
  */

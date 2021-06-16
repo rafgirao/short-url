@@ -32,21 +32,21 @@
   },
   "autoload": {
     "psr-4": {
-      "AshAllenDesign\\ShortURL\\": "src/"
+      "RafaelGirao\\ShortURL\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "AshAllenDesign\\ShortURL\\Tests\\": "tests/"
+      "RafaelGirao\\ShortURL\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "AshAllenDesign\\ShortURL\\Providers\\ShortURLProvider"
+        "RafaelGirao\\ShortURL\\Providers\\ShortURLProvider"
       ],
       "aliases": {
-        "ShortURL": "AshAllenDesign\\ShortURL\\Facades\\ShortURL"
+        "ShortURL": "RafaelGirao\\ShortURL\\Facades\\ShortURL"
       }
     }
   }

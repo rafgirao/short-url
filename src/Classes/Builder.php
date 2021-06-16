@@ -1,10 +1,10 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Classes;
+namespace RafaelGirao\ShortURL\Classes;
 
-use AshAllenDesign\ShortURL\Exceptions\ShortURLException;
-use AshAllenDesign\ShortURL\Exceptions\ValidationException;
-use AshAllenDesign\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Exceptions\ShortURLException;
+use RafaelGirao\ShortURL\Exceptions\ValidationException;
+use RafaelGirao\ShortURL\Models\ShortURL;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Tests\Unit\Classes;
+namespace RafaelGirao\ShortURL\Tests\Unit\Classes;
 
-use AshAllenDesign\ShortURL\Classes\Resolver;
-use AshAllenDesign\ShortURL\Exceptions\ValidationException;
-use AshAllenDesign\ShortURL\Models\ShortURL;
-use AshAllenDesign\ShortURL\Models\ShortURLVisit;
-use AshAllenDesign\ShortURL\Tests\Unit\TestCase;
+use RafaelGirao\ShortURL\Classes\Resolver;
+use RafaelGirao\ShortURL\Exceptions\ValidationException;
+use RafaelGirao\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Models\ShortURLVisit;
+use RafaelGirao\ShortURL\Tests\Unit\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;

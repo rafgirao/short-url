@@ -1,8 +1,8 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Classes;
+namespace RafaelGirao\ShortURL\Classes;
 
-use AshAllenDesign\ShortURL\Exceptions\ValidationException;
+use RafaelGirao\ShortURL\Exceptions\ValidationException;
 
 class Validation
 {

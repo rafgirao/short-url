@@ -1,9 +1,9 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Tests\Unit\Models\ShortURL;
+namespace RafaelGirao\ShortURL\Tests\Unit\Models\ShortURL;
 
-use AshAllenDesign\ShortURL\Models\ShortURL;
-use AshAllenDesign\ShortURL\Tests\Unit\TestCase;
+use RafaelGirao\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Tests\Unit\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class TrackingFieldsTest extends TestCase

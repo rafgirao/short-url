@@ -1,11 +1,11 @@
 <?php
 
-namespace AshAllenDesign\ShortURL\Tests\Unit\Controllers;
+namespace RafaelGirao\ShortURL\Tests\Unit\Controllers;
 
-use AshAllenDesign\ShortURL\Events\ShortURLVisited;
-use AshAllenDesign\ShortURL\Models\ShortURL;
-use AshAllenDesign\ShortURL\Models\ShortURLVisit;
-use AshAllenDesign\ShortURL\Tests\Unit\TestCase;
+use RafaelGirao\ShortURL\Events\ShortURLVisited;
+use RafaelGirao\ShortURL\Models\ShortURL;
+use RafaelGirao\ShortURL\Models\ShortURLVisit;
+use RafaelGirao\ShortURL\Tests\Unit\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
