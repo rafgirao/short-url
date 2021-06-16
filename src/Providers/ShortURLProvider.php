@@ -36,6 +36,24 @@ class ShortURLProvider extends ServiceProvider
             __DIR__.'/../../config/short-url.php' => config_path('short-url.php'),
         ], 'short-url-config');
 
+//        // Models
+//        $this->publishes([
+//            __DIR__.'/../../src/Models/ShortURL.php' => app_path('Models/ShortUrl.php'),
+//        ], 'short-url-short-url-model');
+//
+//        $this->publishes([
+//            __DIR__.'/../../src/Models/ShortURLVisit.php' => app_path('Models/ShortURLVisit.php'),
+//        ], 'short-url-short-url-model');
+//
+//        // Controller
+//        $this->publishes([
+//            __DIR__.'/../../src/Controllers/ShortURLController.php' => app_path('Controllers/ShortURLController.php'),
+//        ], 'short-url-short-url-controller');
+
+        $this->publishes([
+            __DIR__.'/../../src/Models/ShortURLVisit.php' => app_path('Models/ShortURLVisit.php'),
+        ], 'short-url-short-url');
+
         // Migrations
         $this->publishes([
             __DIR__.'/../../database/migrations' => database_path('migrations'),

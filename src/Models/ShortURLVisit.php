@@ -3,6 +3,7 @@
 namespace RafaelGirao\ShortURL\Models;
 
 use Carbon\Carbon;
+use App\Models\Account;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
@@ -76,6 +77,14 @@ class ShortURLVisit extends Model
     protected $casts = [
         'short_url_id' => 'integer',
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function account(): BelongsTo
+    {
+        return $this->belongsTo(Account::class, 'account', 'id');
+    }
 
     /**
      * A URL visit belongs to one specific shortened URL.

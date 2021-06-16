@@ -3,8 +3,10 @@
 namespace RafaelGirao\ShortURL\Models;
 
 use Carbon\Carbon;
+use App\Models\Account;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
@@ -91,6 +93,14 @@ class ShortURL extends Model
         'track_referer_url'              => 'boolean',
         'track_device_type'              => 'boolean',
     ];
+
+    /**
+     * @return BelongsTo
+     */
+    public function account(): BelongsTo
+    {
+        return $this->belongsTo(Account::class, 'account', 'id');
+    }
 
     /**
      * A short URL can be visited many times.
