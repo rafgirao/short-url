@@ -92,13 +92,6 @@ class ShortURL extends Model
         'track_device_type'              => 'boolean',
     ];
 
-    public static function booted()
-    {
-        self::creating(function ($model){
-            $model->account = session()->get('account')->id;
-        });
-    }
-
     /**
      * A short URL can be visited many times.
      *

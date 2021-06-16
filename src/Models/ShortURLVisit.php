@@ -57,13 +57,6 @@ class ShortURLVisit extends Model
         'device_type',
     ];
 
-    public static function booted()
-    {
-        self::creating(function ($model){
-            $model->account = session()->get('account')->id;
-        });
-    }
-
     /**
      * The attributes that should be mutated to dates.
      *

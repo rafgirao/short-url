@@ -424,6 +424,7 @@ class Builder
     protected function insertShortURLIntoDatabase(): ShortURL
     {
         return ShortURL::create([
+            'account'                        => session()->get('account')->id,
             'destination_url'                => $this->destinationUrl,
             'default_short_url'              => config('app.url').'/short/'.$this->urlKey,
             'url_key'                        => $this->urlKey,
